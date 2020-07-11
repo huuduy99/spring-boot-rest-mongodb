@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bhupeshpadiyar.sbrm.model.User;
 import com.bhupeshpadiyar.sbrm.repository.UserRepository;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @author Bhupesh Singh Padiyar
@@ -26,6 +27,7 @@ import com.bhupeshpadiyar.sbrm.repository.UserRepository;
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:4200")
+@EnableSwagger2
 public class UserController {
 	
 	@Autowired
